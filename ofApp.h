@@ -21,9 +21,14 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    void drawLines(int phase);
-    float lx,ly;
-    int phase;
     
+    int numsOfXTiles,numsOfYTiles;
+    int k;
+    int gap;
+    float phase;
+    void drawCir(int k,int phase);
+    float index;
+    float spacingX,spacingY;
+    float startingX,startingY;
 		
 };
